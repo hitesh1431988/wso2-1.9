@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceGroup name="WorkflowCallbackService" successfullyAdded="true">
+   <service name="WorkflowCallbackService"
+            serviceDocumentation="WorkflowCallbackService"
+            exposedAllTransports="false"
+            serviceDeployedTime="1449803886657"
+            successfullyAdded="true">
+      <operation name="resumeEvent">
+         <module name="wso2bammessagetracerservice"
+                 version="4.2.3"
+                 type="engagedModules"/>
+         <module name="addressing" version="4.2.0" type="engagedModules"/>
+         <module name="pagination" version="4.2.0" type="engagedModules"/>
+      </operation>
+      <bindings>
+         <binding name="WorkflowCallbackServiceHttpBinding">
+            <operation name="resumeEvent"/>
+         </binding>
+         <binding name="WorkflowCallbackServiceSoap11Binding">
+            <operation name="resumeEvent"/>
+         </binding>
+         <binding name="WorkflowCallbackServiceSoap12Binding">
+            <operation name="resumeEvent"/>
+         </binding>
+      </bindings>
+      <policies/>
+      <module name="wso2bammessagetracerservice"
+              version="4.2.3"
+              type="engagedModules"/>
+      <module name="addressing" version="4.2.0" type="engagedModules"/>
+      <module name="pagination" version="4.2.0" type="engagedModules"/>
+      <parameter name="serviceType" type="1">proxy</parameter>
+      <parameter name="interface" type="1">WorkflowCallbackServicePortType</parameter>
+      <association destinationPath="/repository/transports/https/listener"
+                   type="exposedTransports"/>
+      <association destinationPath="/repository/transports/http/listener"
+                   type="exposedTransports"/>
+   </service>
+</serviceGroup>

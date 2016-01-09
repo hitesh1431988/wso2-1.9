@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceGroup name="Reply" successfullyAdded="true">
+   <service name="Reply"
+            exposedAllTransports="false"
+            serviceDeployedTime="1449803888142"
+            successfullyAdded="true">
+      <operation name="deleteReply">
+         <parameter name="AuthorizationAction">/permission/admin/manage/resources/govern/reply/add</parameter>
+         <module name="wso2bammessagetracerservice"
+                 version="4.2.3"
+                 type="engagedModules"/>
+         <module name="addressing" version="4.2.0" type="engagedModules"/>
+         <module name="pagination" version="4.2.0" type="engagedModules"/>
+      </operation>
+      <operation name="getReplyDependencies">
+         <parameter name="AuthorizationAction">/permission/admin/manage/resources/govern/reply/list</parameter>
+         <module name="wso2bammessagetracerservice"
+                 version="4.2.3"
+                 type="engagedModules"/>
+         <module name="addressing" version="4.2.0" type="engagedModules"/>
+         <module name="pagination" version="4.2.0" type="engagedModules"/>
+      </operation>
+      <operation name="addReply">
+         <parameter name="AuthorizationAction">/permission/admin/manage/resources/govern/reply/add</parameter>
+         <module name="wso2bammessagetracerservice"
+                 version="4.2.3"
+                 type="engagedModules"/>
+         <module name="addressing" version="4.2.0" type="engagedModules"/>
+         <module name="pagination" version="4.2.0" type="engagedModules"/>
+      </operation>
+      <operation name="updateReply">
+         <parameter name="AuthorizationAction">/permission/admin/manage/resources/govern/reply/add</parameter>
+         <module name="wso2bammessagetracerservice"
+                 version="4.2.3"
+                 type="engagedModules"/>
+         <module name="addressing" version="4.2.0" type="engagedModules"/>
+         <module name="pagination" version="4.2.0" type="engagedModules"/>
+      </operation>
+      <operation name="getReplyArtifactIDs">
+         <parameter name="AuthorizationAction">/permission/admin/manage/resources/govern/reply/list</parameter>
+         <module name="wso2bammessagetracerservice"
+                 version="4.2.3"
+                 type="engagedModules"/>
+         <module name="addressing" version="4.2.0" type="engagedModules"/>
+         <module name="pagination" version="4.2.0" type="engagedModules"/>
+      </operation>
+      <operation name="getReply">
+         <parameter name="AuthorizationAction">/permission/admin/manage/resources/govern/reply/list</parameter>
+         <module name="wso2bammessagetracerservice"
+                 version="4.2.3"
+                 type="engagedModules"/>
+         <module name="addressing" version="4.2.0" type="engagedModules"/>
+         <module name="pagination" version="4.2.0" type="engagedModules"/>
+      </operation>
+      <bindings>
+         <binding name="ReplySoap11Binding">
+            <operation name="deleteReply"/>
+            <operation name="getReplyDependencies"/>
+            <operation name="addReply"/>
+            <operation name="updateReply"/>
+            <operation name="getReplyArtifactIDs"/>
+            <operation name="getReply"/>
+         </binding>
+         <binding name="ReplySoap12Binding">
+            <operation name="deleteReply"/>
+            <operation name="getReplyDependencies"/>
+            <operation name="addReply"/>
+            <operation name="updateReply"/>
+            <operation name="getReplyArtifactIDs"/>
+            <operation name="getReply"/>
+         </binding>
+         <binding name="ReplyHttpBinding">
+            <operation name="deleteReply"/>
+            <operation name="getReplyDependencies"/>
+            <operation name="addReply"/>
+            <operation name="updateReply"/>
+            <operation name="getReplyArtifactIDs"/>
+            <operation name="getReply"/>
+         </binding>
+      </bindings>
+      <policies/>
+      <module name="wso2bammessagetracerservice"
+              version="4.2.3"
+              type="engagedModules"/>
+      <module name="addressing" version="4.2.0" type="engagedModules"/>
+      <module name="pagination" version="4.2.0" type="engagedModules"/>
+      <parameter name="enableMTOM">true</parameter>
+      <parameter name="adminService">true</parameter>
+      <parameter name="AuthorizationAction">/permission/admin/login</parameter>
+      <parameter name="hiddenService">true</parameter>
+      <association destinationPath="/repository/transports/https/listener"
+                   type="exposedTransports"/>
+   </service>
+</serviceGroup>
